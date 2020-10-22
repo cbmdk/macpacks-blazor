@@ -1,0 +1,46 @@
+@page "/Brew"
+@using macpacks.Model
+@inject HttpClient Http
+<h3>Brew</h3>
+
+@if(macpacks == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var forecast in macpacks)
+        {
+            <tr>
+                <td>@forecast.name</td>
+                <td>@forecast.versions</td>
+                <td>@forecast.homepage</td>
+                <td>@forecast.uses_from_macos</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private MacPack[] macpacks;
+    protected override async Task OnInitializedAsync()
+    {
+        macpacks = await Http.GetFromJsonAsync<MacPack[]>("sample-data/brew.json");
+    }
+
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+   
+
+
+}
