@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">False</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\cbmdo\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\cbmdo\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
   </PropertyGroup>
@@ -15,36 +15,16 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)skclusive.material.core\2.0.1\contentFiles\any\netstandard2.1\package-lock.json" Condition="Exists('$(NuGetPackageRoot)skclusive.material.core\2.0.1\contentFiles\any\netstandard2.1\package-lock.json')">
-      <NuGetPackageId>Skclusive.Material.Core</NuGetPackageId>
-      <NuGetPackageVersion>2.0.1</NuGetPackageVersion>
-      <NuGetItemType>Content</NuGetItemType>
-      <Private>False</Private>
-      <Link>package-lock.json</Link>
-    </Content>
-    <Content Include="$(NuGetPackageRoot)skclusive.material.core\2.0.1\contentFiles\any\netstandard2.1\package.json" Condition="Exists('$(NuGetPackageRoot)skclusive.material.core\2.0.1\contentFiles\any\netstandard2.1\package.json')">
-      <NuGetPackageId>Skclusive.Material.Core</NuGetPackageId>
-      <NuGetPackageVersion>2.0.1</NuGetPackageVersion>
-      <NuGetItemType>Content</NuGetItemType>
-      <Private>False</Private>
-      <Link>package.json</Link>
-    </Content>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Content Include="$(NuGetPackageRoot)chartjs.blazor\1.1.0\contentFiles\any\netstandard2.1\Properties\launchSettings.json" Condition="Exists('$(NuGetPackageRoot)chartjs.blazor\1.1.0\contentFiles\any\netstandard2.1\Properties\launchSettings.json')">
-      <NuGetPackageId>ChartJs.Blazor</NuGetPackageId>
-      <NuGetPackageVersion>1.1.0</NuGetPackageVersion>
-      <NuGetItemType>Content</NuGetItemType>
-      <Private>False</Private>
-      <Link>Properties\launchSettings.json</Link>
-    </Content>
-  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.10.9\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.10.9\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props')" />
-    <Import Project="$(NuGetPackageRoot)chartjs.blazor\1.1.0\buildTransitive\ChartJs.Blazor.props" Condition="Exists('$(NuGetPackageRoot)chartjs.blazor\1.1.0\buildTransitive\ChartJs.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netcore.app\2.1.0\build\netcoreapp2.1\Microsoft.NETCore.App.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.app\2.1.0\build\netcoreapp2.1\Microsoft.NETCore.App.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.runtime\3.2.0\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Runtime.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.runtime\3.2.0\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Runtime.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.build\3.2.1\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Build.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.build\3.2.1\build\netstandard1.0\Microsoft.AspNetCore.Components.WebAssembly.Build.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\cbmdo\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.10.9</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
+    <PkgMicrosoft_AspNetCore_Components_WebAssembly_Runtime Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Runtime)' == '' ">C:\Users\cbmdo\.nuget\packages\microsoft.aspnetcore.components.webassembly.runtime\3.2.0</PkgMicrosoft_AspNetCore_Components_WebAssembly_Runtime>
+    <PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer)' == '' ">C:\Users\cbmdo\.nuget\packages\microsoft.aspnetcore.components.webassembly.devserver\3.2.1</PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer>
+    <PkgMicrosoft_AspNetCore_Components_WebAssembly_Build Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Build)' == '' ">C:\Users\cbmdo\.nuget\packages\microsoft.aspnetcore.components.webassembly.build\3.2.1</PkgMicrosoft_AspNetCore_Components_WebAssembly_Build>
   </PropertyGroup>
 </Project>

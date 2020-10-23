@@ -1,4 +1,30 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+    <AssemblyName>MacPacks.App.View</AssemblyName>
+    <RootNamespace>MacPacks.App.View</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ChartJs.Blazor" Version="1.1.0" />
+    <PackageReference Include="Skclusive.Material.Layout" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Home\" />
+  </ItemGroup>
+
+  <!-- <ItemGroup>
+    <ProjectReference Include="..\..\..\Skclusive.Material.Layout\src\Skclusive.Material.Layout.csproj" Version="2.0.1" />
+  </ItemGroup> -->
+</Project>
+
+
+
+<!--<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -65,8 +91,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ChartJs.Blazor" Version="1.1.0" />
     <PackageReference Include="Skclusive.Material.Core" Version="2.0.1" />
     <PackageReference Include="Skclusive.Material.Layout" Version="2.0.1" />
   </ItemGroup>
 
-</Project>
+</Project>-->

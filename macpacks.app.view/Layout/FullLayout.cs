@@ -3,10 +3,10 @@
 using Microsoft.AspNetCore.Components;
 using Skclusive.Core.Component;
 
-namespace macpacks.app.view.Layout
+namespace MacPacks.App.View.Layout
 {
     [Layout(typeof(FullLayout))]
-    public abstract class FullLayout : DisposableComponentBase
+    public abstract class FullLayoutPage : DisposableComponentBase
     {
     }
 }
