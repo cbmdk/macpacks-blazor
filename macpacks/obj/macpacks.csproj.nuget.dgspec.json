@@ -4,12 +4,12 @@
     "D:\\code\\macpacks-blazor\\macpacks\\macpacks.csproj": {}
   },
   "projects": {
-    "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj": {
+    "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.App.View.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj",
-        "projectName": "macpacks.app.view",
-        "projectPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj",
+        "projectUniqueName": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.App.View.csproj",
+        "projectName": "macpacks.App.View",
+        "projectPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.App.View.csproj",
         "packagesPath": "C:\\Users\\cbmdo\\.nuget\\packages\\",
         "outputPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\obj\\",
         "projectStyle": "PackageReference",
@@ -99,8 +99,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj": {
-                "projectPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj"
+              "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.App.View.csproj": {
+                "projectPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.App.View.csproj"
               }
             }
           }

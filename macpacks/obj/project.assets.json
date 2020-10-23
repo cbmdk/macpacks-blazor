@@ -757,7 +757,7 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "macpacks.app.view/1.0.0": {
+      "macpacks.App.View/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -765,10 +765,10 @@
           "Skclusive.Material.Layout": "2.0.1"
         },
         "compile": {
-          "bin/placeholder/macpacks.app.view.dll": {}
+          "bin/placeholder/macpacks.App.View.dll": {}
         },
         "runtime": {
-          "bin/placeholder/macpacks.app.view.dll": {}
+          "bin/placeholder/macpacks.App.View.dll": {}
         }
       }
     }
@@ -1659,10 +1659,10 @@
         "version.txt"
       ]
     },
-    "macpacks.app.view/1.0.0": {
+    "macpacks.App.View/1.0.0": {
       "type": "project",
-      "path": "../macpacks.app.view/macpacks.app.view.csproj",
-      "msbuildProject": "../macpacks.app.view/macpacks.app.view.csproj"
+      "path": "../macpacks.app.view/macpacks.App.View.csproj",
+      "msbuildProject": "../macpacks.app.view/macpacks.App.View.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1671,7 +1671,7 @@
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
       "Skclusive.Material.Core >= 2.0.1",
       "Skclusive.Material.Layout >= 2.0.1",
-      "macpacks.app.view >= 1.0.0"
+      "macpacks.App.View >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1707,8 +1707,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj": {
-              "projectPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj"
+            "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.App.View.csproj": {
+              "projectPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.App.View.csproj"
             }
           }
         }
