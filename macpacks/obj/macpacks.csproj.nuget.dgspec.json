@@ -1,32 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cbm/Projects/macpacks/macpacks/macpacks.csproj": {}
+    "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\macpacks.csproj": {}
   },
   "projects": {
-    "/Users/cbm/Projects/macpacks/macpacks/macpacks.csproj": {
+    "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\macpacks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cbm/Projects/macpacks/macpacks/macpacks.csproj",
+        "projectUniqueName": "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\macpacks.csproj",
         "projectName": "macpacks",
-        "projectPath": "/Users/cbm/Projects/macpacks/macpacks/macpacks.csproj",
-        "packagesPath": "/Users/cbm/.nuget/packages/",
-        "outputPath": "/Users/cbm/Projects/macpacks/macpacks/obj/",
+        "projectPath": "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\macpacks.csproj",
+        "packagesPath": "C:\\Users\\cbmdo\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/cbm/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cbmdo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -37,33 +41,23 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netcoreapp3.1": {
           "dependencies": {
-            "MatBlazor": {
+            "ChartJs.Blazor": {
               "target": "Package",
-              "version": "[2.7.0, )"
+              "version": "[1.1.0, )"
             },
-            "Microsoft.AspNetCore.Components.WebAssembly": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[3.2.1, )"
+              "version": "[1.10.9, )"
             },
-            "Microsoft.AspNetCore.Components.WebAssembly.Build": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.2.1, )"
-            },
-            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.2.1, )"
-            },
-            "Skclusive.Material.Component": {
+            "Skclusive.Material.Core": {
               "target": "Package",
               "version": "[2.0.1, )"
             },
-            "System.Net.Http.Json": {
+            "Skclusive.Material.Layout": {
               "target": "Package",
-              "version": "[3.2.1, )"
+              "version": "[2.0.1, )"
             }
           },
           "imports": [
@@ -77,11 +71,14 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
