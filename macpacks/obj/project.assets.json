@@ -756,6 +756,20 @@
         "runtime": {
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
+      },
+      "macpacks.app.view/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Skclusive.Material.Core": "2.0.1",
+          "Skclusive.Material.Layout": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/macpacks.app.view.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/macpacks.app.view.dll": {}
+        }
       }
     }
   },
@@ -1644,6 +1658,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "macpacks.app.view/1.0.0": {
+      "type": "project",
+      "path": "../macpacks.app.view/macpacks.app.view.csproj",
+      "msbuildProject": "../macpacks.app.view/macpacks.app.view.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1651,7 +1670,8 @@
       "ChartJs.Blazor >= 1.1.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
       "Skclusive.Material.Core >= 2.0.1",
-      "Skclusive.Material.Layout >= 2.0.1"
+      "Skclusive.Material.Layout >= 2.0.1",
+      "macpacks.app.view >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1662,11 +1682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\macpacks.csproj",
+      "projectUniqueName": "D:\\code\\macpacks-blazor\\macpacks\\macpacks.csproj",
       "projectName": "macpacks",
-      "projectPath": "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\macpacks.csproj",
+      "projectPath": "D:\\code\\macpacks-blazor\\macpacks\\macpacks.csproj",
       "packagesPath": "C:\\Users\\cbmdo\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\macpacks-blazor\\macpacks\\macpacks\\obj\\",
+      "outputPath": "D:\\code\\macpacks-blazor\\macpacks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1686,7 +1706,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj": {
+              "projectPath": "D:\\code\\macpacks-blazor\\macpacks.app.view\\macpacks.app.view.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
