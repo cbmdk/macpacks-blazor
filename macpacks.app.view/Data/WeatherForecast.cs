@@ -1,6 +1,6 @@
 using System;
 
-namespace macpacks.Data
+namespace macpacks.app.view.Data
 {
     public class WeatherForecast
     {

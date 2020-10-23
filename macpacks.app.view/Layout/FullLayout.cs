@@ -1,12 +1,12 @@
 ﻿
-using macpacks.app.view.Layout;
+
 using Microsoft.AspNetCore.Components;
 using Skclusive.Core.Component;
 
-namespace macpacks.Layout
+namespace macpacks.app.view.Layout
 {
     [Layout(typeof(FullLayout))]
-    public abstract class FullLayoutPage : DisposableComponentBase
+    public abstract class FullLayout : DisposableComponentBase
     {
     }
 }

@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace macpacks.Data
+namespace macpacks.app.view.Data
 {
     public class WeatherForecastService
     {
