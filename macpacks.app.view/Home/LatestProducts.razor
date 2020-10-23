@@ -1,0 +1,45 @@
+<Card Class="dashboard-products-root">
+    <CardHeader
+        Subtitle="@Subtitle"
+        Title="Latest products" />
+    <Divider />
+    <CardContent Class="dashboard-products-content">
+        <List>
+        @foreach(var (product, index, total) in GetProducts())
+        {
+            <ListItem
+                Divider="@(index < total - 1)"
+                @key="@product.Id"
+                Context="ListContext">
+                <ListItemAvatar>
+                    <img
+                        alt="Product"
+                        class="dashboard-products-image"
+                        src="@product.ImageUrl" />
+                </ListItemAvatar>
+                <ListItemText
+                    Primary="@product.Title"
+                    Secondary="@GetUpdated(product)"
+                />
+                <IconButton
+                    Edge="@IconButtonEdge.End"
+                    Size="@IconButtonSize.Small">
+                    <MoreVertIcon />
+                </IconButton>
+            </ListItem>
+        }
+        </List>
+    </CardContent>
+    <Divider />
+    <CardActions Class="dashboard-products-actions">
+        <Button
+            Color="@Color.Primary"
+            Size="@Size.Small"
+
+     Variant="@ButtonVariant.Text">
+            View all <ArrowRightIcon />
+        </Button>
+    </CardActions>
+</Card>
+
+

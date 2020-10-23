@@ -8,13 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Home\LatestSales.cs" />
+    <Compile Remove="Home\UsersByDevice.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Home\LatestOrders.razor" />
+    <Content Remove="Home\LatestProducts.razor" />
+    <Content Remove="Home\LatestSales.razor" />
+    <Content Remove="Home\UsersByDevice.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="ChartJs.Blazor" Version="1.1.0" />
     <PackageReference Include="Skclusive.Material.Layout" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Home\" />
   </ItemGroup>
 
   <!-- <ItemGroup>
